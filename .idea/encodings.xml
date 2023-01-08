@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/module01_monolith/cs-dependency/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/module01_monolith/cs-dependency/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/module01_monolith/cs-infrastructure-utility/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/module01_monolith/cs-infrastructure-utility/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/module01_monolith/customer-system/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/module01_monolith/customer-system/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/module01_monolith/outsouring-system/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/module01_monolith/outsouring-system/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/module01_monolith/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/module01_monolith/src/main/resources" charset="UTF-8" />
+  </component>
+</project>

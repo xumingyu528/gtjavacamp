@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/module01_monolith/cs-dependency/cs-dependency.iml" filepath="$PROJECT_DIR$/module01_monolith/cs-dependency/cs-dependency.iml" />
+      <module fileurl="file://$PROJECT_DIR$/module01_monolith/cs-infrastructure-utility/cs-infrastructure-utility.iml" filepath="$PROJECT_DIR$/module01_monolith/cs-infrastructure-utility/cs-infrastructure-utility.iml" />
+      <module fileurl="file://$PROJECT_DIR$/module01_monolith/customer-system/customer-system.iml" filepath="$PROJECT_DIR$/module01_monolith/customer-system/customer-system.iml" />
+      <module fileurl="file://$PROJECT_DIR$/module01_monolith/module01_monolith.iml" filepath="$PROJECT_DIR$/module01_monolith/module01_monolith.iml" />
+      <module fileurl="file://$PROJECT_DIR$/module01_monolith/outsouring-system/outsouring-system.iml" filepath="$PROJECT_DIR$/module01_monolith/outsouring-system/outsouring-system.iml" />
+    </modules>
+  </component>
+</project>
