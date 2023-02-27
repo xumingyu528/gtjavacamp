@@ -1,0 +1,36 @@
+### 查询所有
+GET localhost:10003/customerStaffs/hangzhou/
+Content-Type: application/json
+
+### 新增
+POST localhost:10003/customerStaffs/hangzhou/
+Content-Type: application/json
+
+{
+  "nickname": "王五",
+  "avatar": "5.jpg",
+  "phone": "135",
+  "gender": "male",
+  "goodAt": "拉",
+  "remark": "none"
+}
+
+###
+PUT localhost:10003/customerStaffs/hangzhou/
+Content-Type: application/json
+
+{
+  "id": 3,
+  "nickname": "张三",
+  "avatar": "3.jpg",
+  "phone": "133",
+  "gender": "male",
+  "goodAt": "吃",
+  "remark": "none"
+}
+
+###
+DELETE localhost:10003/customerStaffs/hangzhou/?id=8
+Content-Type: application/json
+
+###

@@ -1,0 +1,49 @@
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: always
+
+spring:
+  application:
+    name: customer-service
+
+  #  datasource:
+#    driver-class-name: com.mysql.cj.jdbc.Driver
+#    url: jdbc:mysql://127.0.0.1:3306/customer_system
+#    username: root
+#    password: 123123
+
+  datasource:
+    dynamic:
+      primary: master
+      druid:
+        initial-size: 3
+        min-idle: 3
+        max-active: 40
+        max-wait: 60000
+      datasource:
+        master:
+          driver-class-name: com.mysql.cj.jdbc.Driver
+          url: jdbc:mysql://127.0.0.1:3306/customer_system?characterEncoding=utf8&useSSL=false&serverTimezone=Asia/Shanghai
+          username: root
+          password: 123123
+
+
+mybatis-plus:
+  mapper-locations: classpath:mapperXml/*.xml
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  global-config:
+    db-config:
+      logic-delete-field: deleted #逻辑删除字段名
+      logic-not-delete-value: 0 #未删除为 0
+      logic-delete-value: 1 #逻辑删除为 1
+#
+#receive-meter:
+#  selector: ${SW_RECEIVER_METER:default}
+#  default:
+#    meterAnalyzerActiveFiles: ${SW_METER_ANALYZER_ACTIVE_FILES:spring-sleuth}

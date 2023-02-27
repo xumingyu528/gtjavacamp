@@ -1,0 +1,8 @@
+GET localhost:8080/hypermedia/customerStaffs/1
+Content-Type: application/json
+
+###
+GET localhost:8080/hypermedia/customerStaffs/
+Content-Type: application/json
+
+###

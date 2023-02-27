@@ -2,21 +2,24 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="outsouring-system-hangzhou" />
         <module name="outsouring-system" />
         <module name="cs-infrastructure-utility" />
         <module name="customer-system" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="cs-dependency" target="1.8" />
+      <module name="cs-dependency" target="1.5" />
       <module name="cs-infrastructure-utility" target="1.8" />
       <module name="customer-system" target="1.8" />
       <module name="module01_monolith" target="1.8" />
       <module name="outsouring-system" target="1.8" />
+      <module name="outsouring-system-hangzhou" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

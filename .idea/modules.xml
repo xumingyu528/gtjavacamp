@@ -7,6 +7,7 @@
       <module fileurl="file://$PROJECT_DIR$/module01_monolith/customer-system/customer-system.iml" filepath="$PROJECT_DIR$/module01_monolith/customer-system/customer-system.iml" />
       <module fileurl="file://$PROJECT_DIR$/module01_monolith/module01_monolith.iml" filepath="$PROJECT_DIR$/module01_monolith/module01_monolith.iml" />
       <module fileurl="file://$PROJECT_DIR$/module01_monolith/outsouring-system/outsouring-system.iml" filepath="$PROJECT_DIR$/module01_monolith/outsouring-system/outsouring-system.iml" />
+      <module fileurl="file://$PROJECT_DIR$/module01_monolith/outsouring-system/outsouring-system-hangzhou/outsouring-system-hangzhou.iml" filepath="$PROJECT_DIR$/module01_monolith/outsouring-system/outsouring-system-hangzhou/outsouring-system-hangzhou.iml" />
     </modules>
   </component>
 </project>

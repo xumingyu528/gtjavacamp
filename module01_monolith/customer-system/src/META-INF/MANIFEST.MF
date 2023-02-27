@@ -1,0 +1,56 @@
+Manifest-Version: 1.0
+Main-Class: site.xmy.projects.cs.CSApplication
+Class-Path: asm-9.1.jar fastjson2-2.0.5.jar spring-boot-devtools-2.6.8.j
+ ar snakeyaml-1.29.jar spring-boot-starter-webflux-2.6.8.jar jsqlparser-
+ 4.2.jar spring-jcl-5.3.20.jar jackson-core-2.13.3.jar tomcat-embed-webs
+ ocket-9.0.63.jar tomcat-embed-core-9.0.63.jar spring-webmvc-5.3.20.jar 
+ spring-boot-actuator-autoconfigure-2.6.8.jar spring-cloud-context-3.1.1
+ .jar jakarta.validation-api-2.0.2.jar spring-context-5.3.20.jar feign-s
+ lf4j-11.8.jar spring-boot-2.6.8.jar mybatis-plus-boot-starter-3.4.3.4.j
+ ar spring-boot-starter-validation-2.6.8.jar json-smart-2.4.8.jar jackso
+ n-module-parameter-names-2.13.3.jar log4j-to-slf4j-2.17.2.jar spring-jd
+ bc-5.3.20.jar spring-cloud-openfeign-core-3.1.1.jar jul-to-slf4j-1.7.36
+ .jar mybatis-spring-2.0.6.jar jackson-annotations-2.13.3.jar spring-aop
+ -5.3.20.jar feign-form-spring-3.8.0.jar LatencyUtils-2.0.3.jar jboss-lo
+ gging-3.4.3.Final.jar spring-security-rsa-1.0.10.RELEASE.jar logback-cl
+ assic-1.2.11.jar spring-boot-starter-web-2.6.8.jar reactive-streams-1.0
+ .3.jar mybatis-plus-annotation-3.4.3.4.jar spring-cloud-starter-openfei
+ gn-3.1.1.jar fastjson2-extension-2.0.5.jar spring-boot-starter-json-2.6
+ .8.jar commons-fileupload-1.4.jar hibernate-validator-6.2.3.Final.jar s
+ pring-boot-autoconfigure-2.6.8.jar spring-data-redis-2.2.3.RELEASE.jar 
+ commons-io-2.2.jar bcprov-jdk15on-1.68.jar micrometer-core-1.8.6.jar re
+ actor-netty-core-1.0.19.jar netty-transport-classes-epoll-4.1.77.Final.
+ jar slf4j-api-1.7.36.jar netty-codec-4.1.77.Final.jar netty-resolver-dn
+ s-classes-macos-4.1.77.Final.jar jackson-datatype-jsr310-2.13.3.jar asp
+ ectjweaver-1.9.7.jar druid-spring-boot-starter-1.2.8.jar mybatis-plus-e
+ xtension-3.4.3.4.jar spring-plugin-core-2.0.0.RELEASE.jar spring-boot-s
+ tarter-logging-2.6.8.jar json-path-2.6.0.jar spring-boot-starter-tomcat
+ -2.6.8.jar spring-boot-starter-reactor-netty-2.6.8.jar mysql-connector-
+ java-8.0.29.jar netty-resolver-4.1.77.Final.jar netty-resolver-dns-4.1.
+ 77.Final.jar jackson-datatype-jdk8-2.13.3.jar fastjson-2.0.5.jar classm
+ ate-1.5.1.jar spring-oxm-5.3.20.jar netty-codec-http2-4.1.77.Final.jar 
+ spring-security-crypto-5.6.5.jar mybatis-plus-3.4.3.4.jar spring-boot-s
+ tarter-actuator-2.6.8.jar mybatis-3.5.7.jar spring-cloud-commons-3.1.1.
+ jar netty-common-4.1.77.Final.jar spring-expression-5.3.20.jar spring-b
+ oot-admin-client-2.6.8.jar netty-codec-dns-4.1.77.Final.jar feign-form-
+ 3.8.0.jar spring-hateoas-1.4.3.jar spring-data-commons-2.6.4.jar access
+ ors-smart-2.4.8.jar netty-transport-4.1.77.Final.jar spring-boot-actuat
+ or-2.6.8.jar javax.annotation-api-1.3.2.jar bcpkix-jdk15on-1.68.jar spr
+ ing-webflux-5.3.20.jar tomcat-embed-el-9.0.63.jar logback-core-1.2.11.j
+ ar spring-context-support-5.3.20.jar spring-boot-admin-starter-client-2
+ .6.8.jar HikariCP-4.0.3.jar spring-web-5.3.20.jar feign-core-11.8.jar s
+ pring-boot-configuration-processor-2.6.8.jar lombok-1.18.24.jar spring-
+ boot-starter-aop-2.6.8.jar netty-buffer-4.1.77.Final.jar mybatis-plus-c
+ ore-3.4.3.4.jar log4j-api-2.17.2.jar netty-codec-socks-4.1.77.Final.jar
+  netty-transport-native-unix-common-4.1.77.Final.jar spring-tx-5.3.20.j
+ ar hutool-all-5.6.1.jar spring-boot-starter-2.6.8.jar reactor-core-3.4.
+ 18.jar jakarta.annotation-api-1.3.5.jar netty-handler-4.1.77.Final.jar 
+ spring-core-5.3.20.jar spring-beans-5.3.20.jar commons-lang3-3.12.0.jar
+  netty-handler-proxy-4.1.77.Final.jar HdrHistogram-2.1.12.jar netty-tra
+ nsport-native-epoll-4.1.77.Final-linux-x86_64.jar reactor-netty-http-1.
+ 0.19.jar jackson-databind-2.13.3.jar h2-1.4.200.jar spring-boot-starter
+ -jdbc-2.6.8.jar netty-resolver-dns-native-macos-4.1.77.Final-osx-x86_64
+ .jar spring-cloud-starter-3.1.1.jar druid-1.2.8.jar spring-data-keyvalu
+ e-2.6.4.jar netty-codec-http-4.1.77.Final.jar spring-boot-starter-hateo
+ as-2.6.8.jar
+
