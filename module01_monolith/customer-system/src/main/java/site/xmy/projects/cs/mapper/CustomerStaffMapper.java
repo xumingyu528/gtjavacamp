@@ -8,6 +8,11 @@ import site.xmy.projects.cs.entity.staff.CustomerStaff;
 import site.xmy.projects.cs.infrastructure.page.PageObject;
 
 public interface CustomerStaffMapper extends BaseMapper<CustomerStaff> {
+    default Long countCustomerStaffs(){
+        LambdaQueryWrapper<CustomerStaff> queryWrapper = new LambdaQueryWrapper<>();
+        return this.selectCount(queryWrapper);
+    }
+
 
     default PageObject<CustomerStaff> findCustomerStaffByPhone(String phoneNum){
         LambdaQueryWrapper<CustomerStaff> queryWrapper = new LambdaQueryWrapper<>();

@@ -7,9 +7,17 @@ management:
     health:
       show-details: always
 
+server:
+  servlet:
+    encoding:
+      force: true
+      enabled: true
+      charset: UTF-8
+
 spring:
   application:
     name: customer-service
+
 
   #  datasource:
 #    driver-class-name: com.mysql.cj.jdbc.Driver

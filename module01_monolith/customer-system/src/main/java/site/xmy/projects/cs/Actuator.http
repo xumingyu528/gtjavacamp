@@ -1,0 +1,19 @@
+GET localhost:8080/actuator/health
+Content-Type: application/json
+
+###
+GET localhost:8080/actuator/mysystem
+Content-Type: application/json
+
+###
+GET localhost:8080/actuator/customerStaff/13355667789
+Content-Type: application/json
+
+###
+GET localhost:8080/actuator/customerStaffCount
+Content-Type: application/json
+
+###
+
+
+

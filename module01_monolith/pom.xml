@@ -13,6 +13,8 @@
         <module>cs-infrastructure-utility</module>
         <module>cs-dependency</module>
         <module>outsouring-system</module>
+        <module>cms</module>
+        <module>outsouring-system/cms</module>
     </modules>
 
 
