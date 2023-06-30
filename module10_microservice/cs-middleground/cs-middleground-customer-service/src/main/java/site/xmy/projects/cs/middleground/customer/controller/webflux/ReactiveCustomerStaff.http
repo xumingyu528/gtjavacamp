@@ -1,0 +1,49 @@
+### 新增
+POST localhost:8080/reactive/customerStaffs/
+Content-Type: application/json
+
+{
+  "id": "1",
+  "groupId": "1",
+  "nickname": "起名太难",
+  "accountId" : "100",
+  "staffName" : "xmy",
+  "avatar" : "1.jpg",
+  "phone" : "13355667789",
+  "gender" : "MALE",
+  "status" : "OFFLINE",
+  "goodAt" : "滑冰",
+  "welcomeMessage" : "你好，我是xmy",
+  "remark" : "remark"
+}
+
+### 更新
+PUT localhost:8080/reactive/customerStaffs/
+Content-Type: application/json
+
+{
+  "id": "6",
+  "groupId" : "10",
+  "nickname" : "最佳第66人",
+  "avatar" : "6.jpg",
+  "goodAt" : "滑冰",
+  "status" : "OFFLINE",
+  "welcomeMessage" : "老铁666",
+  "remark" : "remark"
+}
+
+### 查询所有
+GET localhost:8080/reactive/customerStaffs/
+Content-Type: application/json
+
+
+### 查询
+GET localhost:8080/reactive/customerStaffs/1
+Content-Type: application/json
+
+
+### 删除
+DELETE localhost:8080/reactive/customerStaffs/2
+Content-Type: application/json
+
+###

@@ -2,12 +2,25 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/module04_distributed_service/cs-admin-server/cs-admin-server.iml" filepath="$PROJECT_DIR$/module04_distributed_service/cs-admin-server/cs-admin-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/module01_monolith/cs-dependency/cs-dependency.iml" filepath="$PROJECT_DIR$/module01_monolith/cs-dependency/cs-dependency.iml" />
+      <module fileurl="file://$PROJECT_DIR$/module04_distributed_service/cs-dependency/cs-dependency (1).iml" filepath="$PROJECT_DIR$/module04_distributed_service/cs-dependency/cs-dependency (1).iml" />
       <module fileurl="file://$PROJECT_DIR$/module01_monolith/cs-infrastructure-utility/cs-infrastructure-utility.iml" filepath="$PROJECT_DIR$/module01_monolith/cs-infrastructure-utility/cs-infrastructure-utility.iml" />
+      <module fileurl="file://$PROJECT_DIR$/module04_distributed_service/cs-infrastructure-utility/cs-infrastructure-utility (1).iml" filepath="$PROJECT_DIR$/module04_distributed_service/cs-infrastructure-utility/cs-infrastructure-utility (1).iml" />
+      <module fileurl="file://$PROJECT_DIR$/module04_distributed_service/customer-service/customer-service.iml" filepath="$PROJECT_DIR$/module04_distributed_service/customer-service/customer-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/module01_monolith/customer-system/customer-system.iml" filepath="$PROJECT_DIR$/module01_monolith/customer-system/customer-system.iml" />
+      <module fileurl="file://$PROJECT_DIR$/module04_distributed_service/customer-system/customer-system (1).iml" filepath="$PROJECT_DIR$/module04_distributed_service/customer-system/customer-system (1).iml" />
+      <module fileurl="file://$PROJECT_DIR$/module04_distributed_service/im-service/im-service.iml" filepath="$PROJECT_DIR$/module04_distributed_service/im-service/im-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/module04_distributed_service/integration-service/integration-service.iml" filepath="$PROJECT_DIR$/module04_distributed_service/integration-service/integration-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/module04_distributed_service/message-service/message-service.iml" filepath="$PROJECT_DIR$/module04_distributed_service/message-service/message-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/module01_monolith/module01_monolith.iml" filepath="$PROJECT_DIR$/module01_monolith/module01_monolith.iml" />
       <module fileurl="file://$PROJECT_DIR$/module01_monolith/outsouring-system/outsouring-system.iml" filepath="$PROJECT_DIR$/module01_monolith/outsouring-system/outsouring-system.iml" />
+      <module fileurl="file://$PROJECT_DIR$/module04_distributed_service/outsouring-system/outsouring-system (1).iml" filepath="$PROJECT_DIR$/module04_distributed_service/outsouring-system/outsouring-system (1).iml" />
       <module fileurl="file://$PROJECT_DIR$/module01_monolith/outsouring-system/outsouring-system-hangzhou/outsouring-system-hangzhou.iml" filepath="$PROJECT_DIR$/module01_monolith/outsouring-system/outsouring-system-hangzhou/outsouring-system-hangzhou.iml" />
+      <module fileurl="file://$PROJECT_DIR$/module04_distributed_service/search-service/search-service.iml" filepath="$PROJECT_DIR$/module04_distributed_service/search-service/search-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/module04_distributed_service/search-service/search-service-definition/search-service-definition.iml" filepath="$PROJECT_DIR$/module04_distributed_service/search-service/search-service-definition/search-service-definition.iml" />
+      <module fileurl="file://$PROJECT_DIR$/module04_distributed_service/search-service/search-service-provider/search-service-provider.iml" filepath="$PROJECT_DIR$/module04_distributed_service/search-service/search-service-provider/search-service-provider.iml" />
+      <module fileurl="file://$PROJECT_DIR$/module04_distributed_service/ticket-service/ticket-service.iml" filepath="$PROJECT_DIR$/module04_distributed_service/ticket-service/ticket-service.iml" />
     </modules>
   </component>
 </project>

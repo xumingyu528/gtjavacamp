@@ -1,0 +1,11 @@
+mybatis:
+  config-location: classpath:mybatis-config.xml
+
+server:
+  port: 11001
+
+spring:
+  application:
+    name: message-traditional-service
+  profiles:
+    active: traditional

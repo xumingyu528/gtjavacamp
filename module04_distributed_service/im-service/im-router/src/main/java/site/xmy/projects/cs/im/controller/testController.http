@@ -1,0 +1,32 @@
+### 获取服务器信息
+GET http://localhost:9003/serverInfo/
+Content-Type: application/json
+
+
+### 登录
+POST http://localhost:9003/login
+Content-Type: application/json
+
+{
+  "userid": 100,
+  "username": "zhangsan",
+  "serverHost": "127.0.0.1",
+  "httpPort": 9001,
+  "nettyPort": 8888
+}
+
+### 登出
+POST http://localhost:9003/logout/100
+Content-Type: application/json
+
+### 聊天
+POST http://localhost:9003/p2p/chat
+Content-Type: application/json
+
+{
+  "fromUserId": 1011,
+  "toUserId": 1011,
+  "msg": "hihi"
+}
+
+###

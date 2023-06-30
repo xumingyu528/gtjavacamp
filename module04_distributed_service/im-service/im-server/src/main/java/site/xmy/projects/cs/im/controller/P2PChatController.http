@@ -1,0 +1,10 @@
+POST localhost:9001/chat/chat
+Content-Type: application/json
+
+{
+    "fromUserId" : "100",
+    "toUserId" : "1011",
+    "msg" : "hi"
+}
+
+###

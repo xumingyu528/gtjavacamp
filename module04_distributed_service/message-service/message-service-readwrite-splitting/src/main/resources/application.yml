@@ -1,0 +1,12 @@
+mybatis:
+  config-location: classpath:mybatis-config.xml
+
+server:
+  port: 11004
+
+spring:
+  application:
+    name: message-readwrite-splitting-service
+  profiles:
+#    active: readwrite-splitting # 读写分离
+    active: readwrite-sharding-splitting # 分库分表读写分离，有些复杂，需要创建很多库表

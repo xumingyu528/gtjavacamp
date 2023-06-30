@@ -4,12 +4,17 @@ import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import site.xmy.projects.cs.entity.staff.CustomerStaff;
+import site.xmy.projects.cs.entity.tenant.OutsourcingSystem;
 import site.xmy.projects.cs.infrastructure.exception.BizException;
 import site.xmy.projects.cs.infrastructure.page.PageObject;
+import site.xmy.projects.cs.integration.OutsourcingSystemClient;
 import site.xmy.projects.cs.mapper.CustomerStaffMapper;
 import site.xmy.projects.cs.service.ICustomerStaffService;
+import site.xmy.projects.cs.service.IOutsourcingSystemService;
+import site.xmy.projects.cs.servicebus.endpoint.CustomerStaffEndpoint;
 
 import java.util.List;
 import java.util.Objects;
@@ -22,6 +27,15 @@ public class CustomerStaffServiceImpl extends ServiceImpl<CustomerStaffMapper,Cu
 //    private MybatisCustomerStaffMapper mybatisCustomerStaffMapper;
 //    @Autowired
 //    private CustomerStaffMapper customerStaffMapper;
+
+    @Autowired
+    IOutsourcingSystemService outsourcingSystemService;
+
+    @Autowired
+    OutsourcingSystemClient outsourcingSystemClient;
+
+    @Autowired
+    CustomerStaffEndpoint customerStaffEndpoint;
 
 
     @Override
@@ -110,5 +124,19 @@ public class CustomerStaffServiceImpl extends ServiceImpl<CustomerStaffMapper,Cu
 //
 //        return updateById(customerStaff);
         return this.removeById(staffId);
+    }
+
+    @Override
+    public void syncOutsourcingCustomerStaffsBySystemId(Long systemId) {
+        OutsourcingSystem outsourcingSystem = outsourcingSystemService.findOutsourcingSystemById(systemId);
+
+        //远程获取客服信息
+//        List<CustomerStaff> customerStaffs = outsourcingSystemClient.getCustomerStaffs(outsourcingSystem);
+        List<CustomerStaff> customerStaffs = customerStaffEndpoint.fetchCustomerStaffs(outsourcingSystem);
+
+
+
+        this.saveBatch(customerStaffs);
+
     }
 }

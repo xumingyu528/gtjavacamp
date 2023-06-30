@@ -1,0 +1,13 @@
+mybatis:
+  config-location: classpath:mybatis-config.xml
+
+server:
+  port: 11002
+
+spring:
+  application:
+    name: message-sharding-service
+  profiles:
+#    active: sharding-databases # 分库
+#    active: sharding-tables  # 分表
+    active: sharding-databases-tables # 分库分表

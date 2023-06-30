@@ -54,4 +54,8 @@ Content-Type: application/json
 DELETE localhost:8080/customerStaffs/2
 Content-Type: application/json
 
+### 远程调用杭州外包服务查询
+GET localhost:8080/customerStaffs/sync/1
+Content-Type: application/json
+
 ###

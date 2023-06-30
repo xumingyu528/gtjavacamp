@@ -5,11 +5,13 @@
       <list>
         <option value="$PROJECT_DIR$/module01_monolith/pom.xml" />
         <option value="$PROJECT_DIR$/module01_monolith/outsouring-system/outsouring-system-hangzhou/pom.xml" />
+        <option value="$PROJECT_DIR$/module04_distributed_service/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
       <set>
         <option value="$PROJECT_DIR$/module01_monolith/outsouring-system/cms/pom.xml" />
+        <option value="$PROJECT_DIR$/module04_distributed_service/pom.xml" />
       </set>
     </option>
   </component>

@@ -1,0 +1,89 @@
+spring:
+  shardingsphere:
+    datasource:
+      names: ds0write0,ds1write0,ds0read0,ds0read1,ds1read0,ds1read1
+      ds0write0:
+        type: com.alibaba.druid.pool.DruidDataSource
+        driver-class-name: com.mysql.jdbc.Driver
+        url: jdbc:mysql://127.0.0.1:3306/ds0write0?serverTimezone=UTC&useSSL=false&useUnicode=true&characterEncoding=UTF-8
+        username: root
+        password: 123123
+      ds1write0:
+        type: com.alibaba.druid.pool.DruidDataSource
+        driver-class-name: com.mysql.jdbc.Driver
+        url: jdbc:mysql://127.0.0.1:3306/ds1write0?serverTimezone=UTC&useSSL=false&useUnicode=true&characterEncoding=UTF-8
+        username: root
+        password: 123123
+      ds0read0:
+        type: com.alibaba.druid.pool.DruidDataSource
+        driver-class-name: com.mysql.jdbc.Driver
+        url: jdbc:mysql://127.0.0.1:3306/ds0read0?serverTimezone=UTC&useSSL=false&useUnicode=true&characterEncoding=UTF-8
+        username: root
+        password: 123123
+      ds0read1:
+        type: com.alibaba.druid.pool.DruidDataSource
+        driver-class-name: com.mysql.jdbc.Driver
+        url: jdbc:mysql://127.0.0.1:3306/ds0read1?serverTimezone=UTC&useSSL=false&useUnicode=true&characterEncoding=UTF-8
+        username: root
+        password: 123123
+      ds1read0:
+        type: com.alibaba.druid.pool.DruidDataSource
+        driver-class-name: com.mysql.jdbc.Driver
+        url: jdbc:mysql://127.0.0.1:3306/ds1read0?serverTimezone=UTC&useSSL=false&useUnicode=true&characterEncoding=UTF-8
+        username: root
+        password: 123123
+      ds1read1:
+        type: com.alibaba.druid.pool.DruidDataSource
+        driver-class-name: com.mysql.jdbc.Driver
+        url: jdbc:mysql://127.0.0.1:3306/ds1read1?serverTimezone=UTC&useSSL=false&useUnicode=true&characterEncoding=UTF-8
+        username: root
+        password: 123123
+    rules:
+      readwrite-splitting:
+        data-sources:
+          ds0:
+            type: Static
+            props:
+              write-data-source-name: ds0write0
+              read-data-source-names: ds0read0,ds0read1
+            load-balancer-name: round_robin
+          ds1:
+            type: Static
+            props:
+              write-data-source-name: ds1write0
+              read-data-source-names: ds1read0,ds1read1
+            load-balancer-name: round_robin
+        load-balancers:
+          round_robin:
+            type: ROUND_ROBIN
+      sharding:
+        default-database-strategy:
+          standard:
+            sharding-column: from_user_id
+            sharding-algorithm-name: database-inline
+        broadcast-tables: im_business_type
+        sharding-algorithms:
+          database-inline:
+            type: INLINE
+            props:
+              algorithm-expression: ds$->{from_user_id % 2 + 2}
+          im_message-inline:
+            type: INLINE
+            props:
+              algorithm-expression: im_message$->{to_user_id % 3}
+        tables:
+          im_message:
+            actual-data-nodes: ds$->{2..3}.im_message$->{0..2}
+            table-strategy:
+              standard:
+                sharding-column: to_user_id
+                sharding-algorithm-name: im_message-inline
+            key-generator-strategy:
+              column: id
+              key-generator-name: snowflake
+        key-generators:
+          snowflake:
+            type: SNOWFLAKE
+    props:
+      sql-show: true
+

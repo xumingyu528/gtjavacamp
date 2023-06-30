@@ -1,0 +1,9 @@
+server:
+  port: 9003
+
+spring:
+  application: im-router
+
+logging:
+  level:
+    site.xmy.projects.cs: INFO
